@@ -5,7 +5,7 @@ import './SkillCard.css';
 
 const SkillCard = ({ skill }) => {
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 col-sm-12">
       <Card className='mb-4 skills-card' style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Img className="img-fluid w-25" src={skill.icon} />
