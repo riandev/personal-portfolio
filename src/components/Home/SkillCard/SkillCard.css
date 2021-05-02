@@ -1,0 +1,11 @@
+.skills-card{
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(211, 208, 208);
+    border-radius: 10px;
+}
+.skills-card:hover {
+    background-color: rgb(113, 22, 199);
+    color: whitesmoke;
+    font-weight: bold;
+    font-size:17px;
+}
