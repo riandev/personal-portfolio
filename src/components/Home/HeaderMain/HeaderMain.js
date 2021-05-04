@@ -6,7 +6,8 @@ import linkedin from "../../../images/linkedin.png";
 import ButtomNotes from "../ButtomNotes/ButtomNotes";
 import Typical from "react-typical";
 import { Card } from "react-bootstrap";
-import animation from '../../../images/33502-programmer-man.gif'
+import animation from "../../../images/33502-programmer-man.gif";
+import { Link } from "react-router-dom";
 
 const HeaderMain = () => {
   const headerButtom = [
@@ -41,7 +42,7 @@ const HeaderMain = () => {
             </h1>
           </div>
           <div className="container mt-4 ml-5">
-            <Card.Link target='_blank' href='https://github.com/riandev'>
+            <Card.Link target="_blank" href="https://github.com/riandev">
               <img
                 style={{ width: "20px" }}
                 className="img-fluid"
@@ -49,7 +50,10 @@ const HeaderMain = () => {
                 alt=""
               />
             </Card.Link>
-            <Card.Link target='_blank' href="https://www.linkedin.com/in/rashaduzamman-rian-a97429211/">
+            <Card.Link
+              target="_blank"
+              href="https://www.linkedin.com/in/rashaduzamman-rian-a97429211/"
+            >
               <img
                 style={{ width: "20px" }}
                 className="img-fluid"
@@ -59,7 +63,9 @@ const HeaderMain = () => {
             </Card.Link>
           </div>
           <div className="container mt-4 ml-5">
-            <button className="btn btn-danger">See My Works</button>
+            <Link to='/portfolio'>
+              <button className="btn btn-danger">See My Works</button>
+            </Link>
           </div>
           <div className="container ml-3">
             <div className="row mt-4">
@@ -70,7 +76,12 @@ const HeaderMain = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <img style={{width: "400px", marginLeft: "70px"}} className="img-fluid" src={animation} alt="" />
+          <img
+            style={{ width: "400px", marginLeft: "70px" }}
+            className="img-fluid"
+            src={animation}
+            alt=""
+          />
           <p
             style={{ color: "blueviolet", fontWeight: "700" }}
             className="ml-5 pl-5"
