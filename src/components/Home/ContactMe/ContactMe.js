@@ -5,6 +5,7 @@ import location from "../../../images/location.png";
 import ContactMeCard from "../ContactMeCard/ContactMeCard";
 import emailjs from "emailjs-com";
 import contactme from '../../../images/contactme.jpg';
+import contactmes from '../../../images/36431-support.gif';
 
 const ContactMe = () => {
   function sendEmail(e) {
@@ -103,7 +104,7 @@ const ContactMe = () => {
             </form>
           </div>
           <div className='col-md-6'>
-              <img className='img-fluid mt-5' src={contactme} alt=""/>
+              <img className='img-fluid mt-5' src={contactmes} alt=""/>
           </div>
         </div>
       </div>

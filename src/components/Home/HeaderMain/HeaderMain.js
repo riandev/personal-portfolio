@@ -6,6 +6,7 @@ import linkedin from "../../../images/linkedin.png";
 import ButtomNotes from "../ButtomNotes/ButtomNotes";
 import Typical from "react-typical";
 import { Card } from "react-bootstrap";
+import animation from '../../../images/33502-programmer-man.gif'
 
 const HeaderMain = () => {
   const headerButtom = [
@@ -69,7 +70,7 @@ const HeaderMain = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <img className="img-fluid w-75" src={photo} alt="" />
+          <img style={{width: "400px", marginLeft: "70px"}} className="img-fluid" src={animation} alt="" />
           <p
             style={{ color: "blueviolet", fontWeight: "700" }}
             className="ml-5 pl-5"
